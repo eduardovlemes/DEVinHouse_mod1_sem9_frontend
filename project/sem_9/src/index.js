@@ -1,13 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import NFTStore from "./pages/NFTstorePage/index";
+import StarWars from "./pages/StarWarsPage/index";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* Descomente/Comente o componente (página) que você deseja visualizar/ocultar */}
+    {/* <App /> */}
+    {/* <Home /> */}
+    <StarWars />
+    {/* <Case1 /> */}
+    {/* <NFTStore /> */}
   </React.StrictMode>
 );
 
