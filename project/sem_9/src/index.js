@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import NFTStore from "./pages/NFTstorePage/index";
 import StarWars from "./pages/StarWarsPage/index";
+import Case1 from "./pages/case1/index";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -12,8 +13,8 @@ root.render(
     {/* Descomente/Comente o componente (página) que você deseja visualizar/ocultar */}
     {/* <App /> */}
     {/* <Home /> */}
-    <StarWars />
-    {/* <Case1 /> */}
+    {/* <StarWars /> */}
+    <Case1 />
     {/* <NFTStore /> */}
   </React.StrictMode>
 );
