@@ -1,7 +1,7 @@
 // Importo a classe de estilos
 import "./style.css";
 // Faço a importação do Card dos personagens
-import CardSW from "../../components/StarWars/index";
+import CardSW from "../../components/StarWars";
 import { useEffect, useState } from "react";
 
 export default function StarWars() {
@@ -11,31 +11,37 @@ export default function StarWars() {
       id: 1,
       nome: "Luke Skywalker",
       imagem: "https://starwars-visualguide.com/assets/img/characters/1.jpg",
+      tipo: "humano",
     },
     {
       id: 2,
       nome: "C-3PO",
       imagem: "https://starwars-visualguide.com/assets/img/characters/2.jpg",
+      tipo: "robo",
     },
     {
       id: 3,
       nome: "Darth Vader",
       imagem: "https://starwars-visualguide.com/assets/img/characters/4.jpg",
+      tipo: "humano",
     },
     {
       id: 4,
       nome: "Leia Organa",
       imagem: "https://starwars-visualguide.com/assets/img/characters/5.jpg",
+      tipo: "humano",
     },
     {
       id: 5,
       nome: "R2-D2",
       imagem: "https://starwars-visualguide.com/assets/img/characters/3.jpg",
+      tipo: "robo",
     },
     {
       id: 6,
       nome: "Obi-Wan Kenobi",
       imagem: "https://starwars-visualguide.com/assets/img/characters/10.jpg",
+      tipo: "humano",
     },
   ];
 
@@ -46,6 +52,7 @@ export default function StarWars() {
 
   // Declaro um useState para controle dos termos digitados pelo usuário
   const [termo, setTermo] = useState("");
+  const [tipo, setTipo] = useState("");
 
   // useEffect com uma condição de execução, neste caso será executado sempre que existir uma mudança na variável "termo"
   // Se houver a mudança, será chamado o método setFiltro com a resposta da busca de itens que condizem com o valor digitado pelo usuário
@@ -56,10 +63,10 @@ export default function StarWars() {
       personagens.filter(
         (item) =>
           item.nome.toLocaleLowerCase().indexOf(termo.toLocaleLowerCase()) !==
-          -1
+            -1 && item.tipo.indexOf(tipo) !== -1
       )
     );
-  }, [termo]);
+  }, [termo, tipo]);
 
   return (
     <div className="sw">
@@ -68,6 +75,20 @@ export default function StarWars() {
           alt="star wars logo"
           src="http://vignette1.wikia.nocookie.net/disney/images/8/8b/Starwars-logo.png/revision/latest?cb=20141129122237"
         />
+        <button
+          onClick={() => {
+            setTipo("humano");
+          }}
+        >
+          Humanos
+        </button>
+        <button
+          onClick={() => {
+            setTipo("robo");
+          }}
+        >
+          Robos
+        </button>
       </div>
       <div className="sw-content">
         <div className="sw-search">
