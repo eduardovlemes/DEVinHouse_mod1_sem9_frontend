@@ -8,6 +8,7 @@ import StarWars from "./pages/StarWarsPage/index";
 import Case1 from "./pages/case1/index";
 import Home from "./pages/home/index";
 import BotaoTempo from "./pages/botaoTempo";
+import ExemploClass from "./components/Class";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,10 +16,15 @@ root.render(
     {/* Descomente/Comente o componente (página) que você deseja visualizar/ocultar */}
     {/* <App /> */}
     {/* <Home /> */}
-    <StarWars />
+    {/* <StarWars /> */}
     {/* <Case1 /> */}
     {/* <NFTStore /> */}
     {/* <BotaoTempo /> */}
+    <ExemploClass
+      foto="https://cdn.pensador.com/img/authors/ho/me/homer-simpson-l.jpg"
+      nome="Homer"
+      email="homer@gmail.com"
+    />
   </React.StrictMode>
 );
 
