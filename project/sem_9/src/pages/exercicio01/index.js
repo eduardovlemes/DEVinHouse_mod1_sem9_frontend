@@ -46,7 +46,7 @@ export default function ListaFrutas() {
   }, [nome]);
   return (
     <div className="content">
-      <div className="nft">
+      <div className="fruta">
         <h4>Frutas Store</h4>
         <div className="nome">
           <button
