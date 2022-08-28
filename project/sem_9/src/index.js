@@ -8,7 +8,7 @@ import StarWars from "./pages/StarWarsPage/index";
 import Case1 from "./pages/case1/index";
 import Home from "./pages/home/index";
 import BotaoTempo from "./pages/botaoTempo";
-import ExemploClass from "./components/Class";
+import GithubIntegration from "./pages/githubIntegration";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -20,11 +20,7 @@ root.render(
     {/* <Case1 /> */}
     {/* <NFTStore /> */}
     {/* <BotaoTempo /> */}
-    <ExemploClass
-      foto="https://cdn.pensador.com/img/authors/ho/me/homer-simpson-l.jpg"
-      nome="Homer"
-      email="homer@gmail.com"
-    />
+    <GithubIntegration />
   </React.StrictMode>
 );
 
