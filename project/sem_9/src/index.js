@@ -9,6 +9,7 @@ import Case1 from "./pages/case1/index";
 import Home from "./pages/home/index";
 import BotaoTempo from "./pages/botaoTempo";
 import GithubIntegration from "./pages/githubIntegration";
+import Exercicio05 from "./pages/exercicio05";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -20,7 +21,8 @@ root.render(
     {/* <Case1 /> */}
     {/* <NFTStore /> */}
     {/* <BotaoTempo /> */}
-    <GithubIntegration />
+    {/* <GithubIntegration /> */}
+    <Exercicio05 />
   </React.StrictMode>
 );
 
