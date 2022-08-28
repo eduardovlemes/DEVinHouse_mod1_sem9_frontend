@@ -10,6 +10,7 @@ import Home from "./pages/home/index";
 import BotaoTempo from "./pages/botaoTempo";
 import GithubIntegration from "./pages/githubIntegration";
 import Exercicio05 from "./pages/exercicio05";
+import DownloadSoftware from "./pages/exercicio07";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -22,7 +23,8 @@ root.render(
     {/* <NFTStore /> */}
     {/* <BotaoTempo /> */}
     {/* <GithubIntegration /> */}
-    <Exercicio05 />
+    {/* <Exercicio05 /> */}
+    <DownloadSoftware />
   </React.StrictMode>
 );
 
