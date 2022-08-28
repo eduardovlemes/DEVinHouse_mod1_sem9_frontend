@@ -11,6 +11,7 @@ import BotaoTempo from "./pages/botaoTempo";
 import GithubIntegration from "./pages/githubIntegration";
 import Exercicio05 from "./pages/exercicio05";
 import DownloadSoftware from "./pages/exercicio07";
+import Exercicio09 from "./pages/exercicio09";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -24,7 +25,8 @@ root.render(
     {/* <BotaoTempo /> */}
     {/* <GithubIntegration /> */}
     {/* <Exercicio05 /> */}
-    <DownloadSoftware />
+    {/* <DownloadSoftware /> */}
+    <Exercicio09 />
   </React.StrictMode>
 );
 
