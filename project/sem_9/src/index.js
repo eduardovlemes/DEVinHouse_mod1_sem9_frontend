@@ -13,6 +13,7 @@ import Exercicio05 from "./pages/exercicio05";
 import DownloadSoftware from "./pages/exercicio07";
 import Exercicio09 from "./pages/exercicio09";
 import Exercicio10 from "./pages/exercicio10";
+import ListaFrutas from "./pages/exercicio01";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -28,7 +29,8 @@ root.render(
     {/* <Exercicio05 /> */}
     {/* <DownloadSoftware /> */}
     {/* <Exercicio09 /> */}
-    <Exercicio10 />
+    {/* <Exercicio10 /> */}
+    <ListaFrutas />
   </React.StrictMode>
 );
 

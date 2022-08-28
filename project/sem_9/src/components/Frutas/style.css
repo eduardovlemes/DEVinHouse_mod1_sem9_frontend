@@ -1,0 +1,4 @@
+.frutas {
+  display: flex;
+  flex-direction: column;
+}
