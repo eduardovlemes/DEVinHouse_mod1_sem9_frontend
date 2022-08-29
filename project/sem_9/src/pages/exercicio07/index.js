@@ -3,7 +3,7 @@ import "../../App.css";
 
 export default function DownloadSoftware() {
   const softwareObj = {
-    nome: "Audaces 4D",
+    name: "Audaces 4D",
     downloaded: 0,
     isDownloading: false,
   };
@@ -45,7 +45,7 @@ export default function DownloadSoftware() {
         }}
       >
         <h4>
-          {software.nome} - {software.isDownloading}
+          {software.name} - {software.isDownloading}
         </h4>
         <progress value={software.downloaded} min="0" max="100"></progress>
         <button onClick={iniciarDownload}>Download</button>
