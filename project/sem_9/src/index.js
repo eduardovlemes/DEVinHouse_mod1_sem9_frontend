@@ -16,6 +16,7 @@ import Exercicio10 from "./pages/exercicio10";
 import ListaFrutas from "./pages/exercicio01";
 import Exercicio2 from "./pages/exercicio02";
 import Exercicio03 from "./pages/exercicio03";
+import ChangeTitle from "./pages/exercicio04";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -34,7 +35,8 @@ root.render(
     {/* <Exercicio10 /> */}
     {/* <ListaFrutas /> */}
     {/* <Exercicio2 /> */}
-    <Exercicio03 />
+    {/* <Exercicio03 /> */}
+    <ChangeTitle />
   </React.StrictMode>
 );
 
